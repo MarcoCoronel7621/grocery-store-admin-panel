@@ -3,6 +3,10 @@ import Login from "../modules/login";
 
 const router = createBrowserRouter([
     {
+        index: false,
+        element: <Navigate to={"/login"} replace/>
+    },
+    {
         path: "/login",
         element: <Login />
     }
